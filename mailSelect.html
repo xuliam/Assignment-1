@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload=function () {
+            var oBtn1=document.getElementById('btn1');
+            var oDiv=document.getElementById('div1');
+            var aCh=oDiv.getElementsByTagName('input');
+
+            oBtn1.onclick=function(){
+                for (var i = 0; i < aCh.length; i++) {
+                    aCh[i].checked=true;
+                }
+            };
+        };
+    </script>
+</head>
+<body>
+<input id="btn1" type="button" value="Select All"/><br>
+<div id="div1">
+    <input type="checkbox" /><br>
+    <input type="checkbox" /><br>
+    <input type="checkbox"/><br>
+    <input type="checkbox"/><br>
+    <input type="checkbox"/><br>
+    <input type="checkbox"/><br>
+    <input type="checkbox"/><br>
+    <input type="checkbox"/><br>
+    <input type="checkbox"/><br>
+    <input type="checkbox"/><br>
+    <input type="checkbox"/><br>
+    <input type="checkbox"/><br>
+    <input type="checkbox"/><br>
+    <input type="checkbox"/><br>
+    <input type="checkbox"/><br>
+
+</div>
+
+</body>
+</html>

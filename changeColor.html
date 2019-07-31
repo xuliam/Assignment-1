@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1 {
+            width:200px;
+            height:200px;
+            background:red;
+        }
+    </style>
+
+    <script>
+        function setColor(color) {
+          var oDiv = document.getElementById('div1')
+          oDiv.style.background=color;
+        }
+
+        // function toGreen(){
+        //     var oDiv = document.getElementById('div1');
+        //     oDiv.style.background='green';
+        // }
+        // function toBlack(){
+        //     var oDiv = document.getElementById('div1');
+        //     oDiv.style.background='black' ;
+        // }
+        // function toBlue(){
+        //     var oDiv = document.getElementById('div1');
+        //     oDiv.style.background='blue';
+        // }
+    </script>
+</head>
+<body>
+<input type="button" value="Turn Green" onclick="setColor('green')"/>
+<input type="button" value="Turn Black" onclick="setColor('black')"/>
+<input type="button" value="Turn Blue" onclick="setColor('Blue')"/>
+
+<div id="div1">
+
+</div>
+</body>
+</html>
