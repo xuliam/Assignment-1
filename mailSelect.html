@@ -6,6 +6,8 @@
     <script>
         window.onload=function () {
             var oBtn1=document.getElementById('btn1');
+            var oBtn2=document.getElementById('btn2');
+            var oBtn3=document.getElementById('btn3');
             var oDiv=document.getElementById('div1');
             var aCh=oDiv.getElementsByTagName('input');
 
@@ -14,11 +16,35 @@
                     aCh[i].checked=true;
                 }
             };
+            oBtn2.onclick=function(){
+                for (var i = 0; i < aCh.length; i++) {
+                    aCh[i].checked=false;
+                }
+            };
+
+            oBtn3.onclick=function () {
+                for (var i = 0; i < aCh.length; i++) {
+                        if(aCh[i].checked==true){
+                            aCh[i].checked=false;
+                        }
+                        else{
+                            aCh[i].checked=true;
+                        }
+                }
+            }
+
+
         };
+
+
+
+
     </script>
 </head>
 <body>
 <input id="btn1" type="button" value="Select All"/><br>
+<input id="btn2" type="button" value="Select None"/><br>
+<input id="btn3" type="button" value="Select Others"/><br>
 <div id="div1">
     <input type="checkbox" /><br>
     <input type="checkbox" /><br>
