@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1 {width:200px;
+                height:200px;
+                background: red;}
+    </style>
+    <script>
+        // function show(){
+        //     return 12;
+        // }
+        //
+        // var a= show();
+        //
+        // alert(a);
+
+
+        // function sum() {
+        //     // alert(arguments.length);
+        //     alert(arguments[0]);
+        // }
+        //
+        // alert(sum(12,6,8));
+
+
+        // function sum() {
+        //     var result=0;
+        //     for (var i = 0;  i <arguments.length ; i++) {
+        //         result += arguments[i];
+        //     }
+        //     return result;
+        // }
+        //
+        // alert(sum(15,7,17,17,17,17,1));
+
+
+        function css(obj, name, value) {
+            if (arguments.length==2){
+                return obj.style[name];
+            } else{
+                obj.style[name]=value;
+            }
+        }
+
+        window.onload= function () {
+            var oDiv=document.getElementById('div1');
+            // alert(css(oDiv,'width'));
+            // css(oDiv, 'background', 'green');
+
+            alert(getComputedStyle(oDiv,false).width);
+        }
+    </script>
+</head>
+<body>
+<div id="div1">
+
+</div>
+
+</body>
+</html>
